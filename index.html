@@ -5,60 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rettet Brixi</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
-      line-height: 1.6;
-    }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-    .video, .image {
-      width: 100%;
-      margin: 20px 0;
-      border-radius: 12px;
-    }
-    .buttons {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin: 30px 0;
-      flex-wrap: wrap;
-    }
-    .btn {
-      padding: 15px 25px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-    }
-    .gofundme {
-      background-color: #02a95c;
-    }
-    .paypal {
-      background-color: #0070ba;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9em;
-      color: #aaa;
-    }
+    body { margin:0; font-family: Arial, sans-serif; background:#121212; color:#f1f1f1; line-height:1.7; }
+    nav { background:#1e1e1e; padding:15px; text-align:center; position:sticky; top:0; }
+    nav a { color:#f1f1f1; margin:0 15px; text-decoration:none; font-weight:bold; }
+    header { text-align:center; padding:60px 20px; }
+    h1 { font-size:2.8em; }
+    h2 { margin-top:40px; }
+    .container { max-width:900px; margin:auto; padding:20px; }
+    .video, .image { width:100%; margin:20px 0; border-radius:12px; }
+    .buttons { display:flex; gap:20px; justify-content:center; margin:40px 0; flex-wrap:wrap; }
+    .btn { padding:18px 30px; border-radius:12px; text-decoration:none; font-weight:bold; color:white; font-size:1.1em; }
+    .gofundme { background:#02a95c; }
+    .paypal { background:#0070ba; }
+    .box { background:#1e1e1e; padding:20px; border-radius:12px; margin:20px 0; }
+    footer { text-align:center; padding:30px; color:#aaa; }
   </style>
 </head>
 <body>
+
+<nav>
+  <a href="#story">Brixis Geschichte</a>
+  <a href="#why">Warum retten?</a>
+  <a href="#help">Helfen</a>
+</nav>
 
 <header>
   <h1>🐄 Rettet Brixi 💔</h1>
@@ -69,34 +38,58 @@
 
   <video class="video" controls>
     <source src="video.mp4" type="video/mp4">
-    Dein Browser unterstützt das Video nicht.
   </video>
 
-  <img src="bild1.jpg" class="image" alt="Brixi">
-  <img src="bild2.jpg" class="image" alt="Brixi">
+  <img src="bild1.jpg" class="image">
 
-  <p>
-    Manchmal begegnet man einem Tier, das man nie wieder vergisst. Genau so ist es mit Brixi.
-    Sie ist unglaublich zutraulich, liebevoll und vertraut den Menschen.
-  </p>
+  <section id="story" class="box">
+    <h2>💔 Brixis Geschichte</h2>
+    <p>
+      Brixi ist 5½ Jahre alt und eine ganz besondere Kuh.
+      Sie ist unglaublich zutraulich, kommt sofort auf Menschen zu und sucht Nähe.
+    </p>
+    <p>
+      Wenn man bei ihr ist, spürt man sofort ihre ruhige und liebevolle Art.
+      Viele sagen: Sie hat eine ganz besondere Seele.
+    </p>
+    <p>
+      Doch weil sie keine Kälber mehr bekommen kann, hat sie für den Betrieb keinen Nutzen mehr –
+      und soll geschlachtet werden.
+    </p>
+  </section>
 
-  <p>
-    Doch weil sie keine Milch mehr gibt, soll sie geschlachtet werden.
-    Wir möchten das verhindern und ihr ein sicheres Leben ermöglichen.
-  </p>
+  <img src="bild2.jpg" class="image">
 
-  <p>
-    Dafür brauchen wir 2.500€, um ihren Freikauf, Futter und Versorgung zu sichern.
-  </p>
+  <section id="why" class="box">
+    <h2>💛 Warum wir sie retten wollen</h2>
+    <ul>
+      <li>Weil sie unglaublich liebevoll und zutraulich ist</li>
+      <li>Weil sie Menschen Ruhe und Freude schenkt</li>
+      <li>Weil sie Vertrauen zeigt</li>
+      <li>Weil sie eine echte Chance verdient</li>
+    </ul>
+  </section>
 
-  <div class="buttons">
-    <a href="DEIN_GOFUNDME_LINK" class="btn gofundme" target="_blank">💚 GoFundMe</a>
-    <a href="DEIN_PAYPAL_LINK" class="btn paypal" target="_blank">💙 PayPal</a>
-  </div>
+  <section class="box">
+    <h2>🌱 Unser Ziel</h2>
+    <p>
+      Wir möchten Brixi ein sicheres Zuhause geben – auf einer Weide, ohne Angst.
+      Ein Leben mit Fürsorge, Ruhe und Menschen, die sie lieben.
+    </p>
+    <p>
+      Dafür benötigen wir insgesamt <strong>2.500€</strong>.
+    </p>
+  </section>
 
-  <p>
-    Jeder Beitrag zählt. Und wenn du nicht spenden kannst, hilft auch teilen.
-  </p>
+  <section id="help" class="box">
+    <h2>🙏 So kannst du helfen</h2>
+    <p>Jede Spende zählt – egal wie klein.</p>
+    <div class="buttons">
+      <a href="DEIN_GOFUNDME_LINK" class="btn gofundme" target="_blank">💚 GoFundMe</a>
+      <a href="DEIN_PAYPAL_LINK" class="btn paypal" target="_blank">💙 PayPal</a>
+    </div>
+    <p>Auch teilen hilft uns enorm weiter 💚</p>
+  </section>
 
 </div>
 
