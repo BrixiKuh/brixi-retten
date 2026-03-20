@@ -19,6 +19,8 @@
     .paypal { background:#0070ba; }
     .box { background:#1e1e1e; padding:20px; border-radius:12px; margin:20px 0; }
     footer { text-align:center; padding:30px; color:#aaa; }
+    .progress-bar { background:#333; border-radius:10px; overflow:hidden; }
+    .progress-fill { width:0%; background:#02a95c; padding:10px 0; }
   </style>
 </head>
 <body>
@@ -31,16 +33,18 @@
 
 <header>
   <h1>🐄 Rettet Brixi 💔</h1>
+  <p><strong>⚠️ In wenigen Tagen soll sie geschlachtet werden</strong></p>
   <p>Bitte helft uns, ihr Leben zu retten</p>
 </header>
 
 <div class="container">
 
-<video class="video" autoplay muted loop controls>
-  <source src="video.mp4" type="video/mp4">
-  Dein Browser unterstützt das Video nicht.
-</video>
-  
+  <!-- VIDEO -->
+  <video class="video" autoplay muted loop controls>
+    <source src="video.mp4" type="video/mp4">
+    Dein Browser unterstützt das Video nicht.
+  </video>
+
   <img src="bild1.jpg" class="image">
 
   <section id="story" class="box">
@@ -82,12 +86,19 @@
     </p>
   </section>
 
+  <!-- SPENDENFORTSCHRITT (HIER ÄNDERN) -->
   <section class="box">
     <h2>📊 Spendenfortschritt</h2>
+
+    <!-- 🔧 HIER ZAHL ÄNDERN -->
     <p><strong>0€ von 2.500€ gesammelt</strong></p>
-    <div style="background:#333; border-radius:10px; overflow:hidden;">
-      <div style="width:0%; background:#02a95c; padding:10px 0;"></div>
+
+    <!-- 🔧 HIER PROZENT ÄNDERN -->
+    <div class="progress-bar">
+      <div class="progress-fill" style="width:0%;"></div>
     </div>
+
+    <!-- 🔧 HIER REST ÄNDERN -->
     <p>Uns fehlen noch 2.500€ 💔</p>
   </section>
 
@@ -95,7 +106,7 @@
     <h2>🙏 So kannst du helfen</h2>
     <p>Jede Spende zählt – egal wie klein.</p>
     <div class="buttons">
-      <a href="https://gofund.me/238b114ef" class="btn gofundme" target="_blank">💚 GoFundMe</a>
+      <a href="DEIN_GOFUNDME_LINK" class="btn gofundme" target="_blank">💚 GoFundMe</a>
       <a href="DEIN_PAYPAL_LINK" class="btn paypal" target="_blank">💙 PayPal</a>
     </div>
     <p>Auch teilen hilft uns enorm weiter 💚</p>
